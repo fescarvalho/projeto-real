@@ -12,6 +12,13 @@ export const AlunoContainer = styled.div`
   div + div {
     border-top: 1px solid #ddd;
   }
+
+  .link {
+    margin-top: 5px;
+    width: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
 `;
 
 export const ProfilePicture = styled.div`
@@ -19,5 +26,6 @@ export const ProfilePicture = styled.div`
     width: 36px;
     height: 36px;
     border-radius: 50%;
+    margin-right: 20px;
   }
 `;
