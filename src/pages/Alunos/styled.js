@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+
 export const AlunoContainer = styled.div`
   margin-top: 20px;
 
@@ -13,11 +14,24 @@ export const AlunoContainer = styled.div`
     border-top: 1px solid #ddd;
   }
 
-  .link {
+  a {
     margin-top: 5px;
     width: 40px;
     display: flex;
-    justify-content: space-between;
+  }
+
+  @media (max-width: 425px) {
+    span#nome {
+      display: none;
+    }
+  }
+  @media (max-width: 344px) {
+    span#nome {
+      display: inline;
+    }
+    span#email {
+      display: none;
+    }
   }
 `;
 
@@ -26,7 +40,6 @@ export const ProfilePicture = styled.div`
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    margin-right: 20px;
   }
 `;
 

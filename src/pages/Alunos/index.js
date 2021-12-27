@@ -78,8 +78,8 @@ export default function Alunos() {
               )}
             </ProfilePicture>
 
-            <span>{aluno.nome}</span>
-            <span>{aluno.email}</span>
+            <span id="nome">{aluno.nome}</span>
+            <span id="email">{aluno.email}</span>
 
             <div className="link">
               <Link to={`/aluno/${aluno.id}/edit`}>
